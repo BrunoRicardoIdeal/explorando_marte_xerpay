@@ -8,7 +8,7 @@ import 'package:explorando_marte_xerpay/model/malha.dart';
 import 'package:explorando_marte_xerpay/model/sonda.dart';
 
 class Leitor {
-  final ArquivoController _arquivoController = ArquivoController();
+  ArquivoController arquivoController = ArquivoController();
   final SondaController _sondaController;
   List<String> linhas = [];
 
@@ -30,7 +30,7 @@ class Leitor {
   }
 
   Future<void> lerArquivo() async {
-    linhas = await _arquivoController.lerArquivo();
+    linhas = await arquivoController.lerArquivo();
     for (int i = 0; i < linhas.length; i++) {
       var linha = linhas[i];
       if (!_arquivoEhCoerenteComOContrato(linhas)) {

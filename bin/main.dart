@@ -9,4 +9,5 @@ void main(List<String> arguments) async {
 
   _sondaController.executarProcedimentos();
   _sondaController.escreverPosicoesFinais();
+  _sondaController.pousarSondas();
 }

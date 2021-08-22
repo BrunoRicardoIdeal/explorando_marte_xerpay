@@ -2,6 +2,7 @@ import 'package:explorando_marte_xerpay/class/motor_sonda.dart';
 import 'package:explorando_marte_xerpay/common/tipos.dart';
 import 'package:explorando_marte_xerpay/class/conversor_enum_direcao.dart';
 import 'package:explorando_marte_xerpay/model/comando.dart';
+import 'package:explorando_marte_xerpay/model/malha.dart';
 import 'package:explorando_marte_xerpay/model/procedimento.dart';
 import 'package:explorando_marte_xerpay/model/sonda.dart';
 
@@ -59,6 +60,12 @@ class SondaController {
   void escreverPosicoesFinais() {
     for (var sonda in _sondas) {
       print(sonda.toString());
+    }
+  }
+
+  void pousarSondas() {
+    for (var sonda in _sondas) {
+      sonda.emTerra = Malha().parEstaNosLimites(sonda.posicao.parOrdenado);
     }
   }
 }

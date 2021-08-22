@@ -36,5 +36,6 @@ class Constantes {
 
   // Arquivos e diretórios
   static const nomeArquivoEntrada = 'entrada.txt';
+  static const nomeArquivoEntradaTeste = 'entrada_teste.txt';
   static const nomePastaArquivoEntrada = 'entrada';
 }

@@ -2,7 +2,6 @@ import 'package:explorando_marte_xerpay/class/motor_sonda.dart';
 import 'package:explorando_marte_xerpay/common/tipos.dart';
 import 'package:explorando_marte_xerpay/model/comando.dart';
 import 'package:explorando_marte_xerpay/model/direcao.dart';
-import 'package:explorando_marte_xerpay/model/par_ordenado.dart';
 import 'package:explorando_marte_xerpay/model/posicao.dart';
 import 'package:explorando_marte_xerpay/model/sonda.dart';
 
