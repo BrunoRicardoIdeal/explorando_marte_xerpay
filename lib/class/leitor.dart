@@ -71,9 +71,17 @@ class Leitor {
   void _lerPosicaoSonda(String pLinha) {
     var dadosSonda = pLinha;
     var split = dadosSonda.split(' ');
-    int x = int.parse(split[0]);
-    int y = int.parse(split[1]);
-    var direcaoStr = split[2];
+    int x = 0;
+    int y = 0;
+    String direcaoStr = '';
+    try {
+      x = int.parse(split[0]);
+      y = int.parse(split[1]);
+      direcaoStr = split[2];
+    } catch (e) {
+      throw Exception(Constantes.msgErroPosicaoInvalida);
+    }
+
     _sondaController.novaSonda(x, y, direcaoStr);
   }
 

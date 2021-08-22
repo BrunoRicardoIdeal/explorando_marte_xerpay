@@ -15,6 +15,8 @@ class Constantes {
       'O arquivo de entrada está em desacordo com o contrato.';
   static final String msgErroMovimentoAbortado =
       'Movimento abortado! Com o próximo movimento a sonda iria para fora da malha conhecida.';
+  static final String msgErroPosicaoInvalida =
+      'A posição informada é inválida.';
 
   //Chars
   static const charDirecaoN = 'N';
