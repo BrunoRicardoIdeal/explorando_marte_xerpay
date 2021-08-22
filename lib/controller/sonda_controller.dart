@@ -63,9 +63,21 @@ class SondaController {
     }
   }
 
+  List<String> obterPosicoesFinaisEmLista() {
+    List<String> lista = [];
+    for (var sonda in _sondas) {
+      lista.add(sonda.toString());
+    }
+    return lista;
+  }
+
   void pousarSondas() {
     for (var sonda in _sondas) {
       sonda.emTerra = Malha().parEstaNosLimites(sonda.posicao.parOrdenado);
     }
+  }
+
+  void limparSondas() {
+    _sondas.clear();
   }
 }
