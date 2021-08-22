@@ -39,3 +39,10 @@
 - [x] Construção dos modelos abstratos
 - [x] Criação das sondas e seus comandos
 - [x] Proteção contra falhas
+
+## Executando
+
+<h4 align="left">Aplicação principal</h4>
+<p align="left">Pelo prompt, navegue até a pasta bin e execute o arquivo main.dart: <b>dart run main.dart </b></p>
+<h4 align="left">Testes unitários</h4>
+<p align="left">Pelo prompt, navegue até a raiz do projeto e execute: <b>dart test</b></p>
