@@ -42,7 +42,7 @@ class SondaController {
       Procedimento procedimento = _procedimentos[i];
 
       for (var comando in procedimento.comandos) {
-        EnumComando enumComando = comando.obterEnum();
+        EnumComando enumComando = comando.obterEnum() as EnumComando;
         Sonda sonda = procedimento.sonda;
         if (enumComando == EnumComando.comandoM) {
           try {

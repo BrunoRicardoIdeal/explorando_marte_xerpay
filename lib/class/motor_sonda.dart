@@ -31,7 +31,7 @@ class MotorSonda implements Motor {
 
   @override
   void girar(pObj, Comando pComando) {
-    EnumComando enumComando = pComando.obterEnum();
+    EnumComando enumComando = pComando.obterEnum() as EnumComando;
     Sonda sonda = pObj as Sonda;
 
     if (enumComando == EnumComando.comandoM) {
